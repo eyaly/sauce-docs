@@ -15,7 +15,9 @@ Testing push notifications is essential to deliver a satisfactory mobile experie
 - A Sauce Labs account ([Log in](https://accounts.saucelabs.com/am/XUI/#login/) or sign up for a [free trial license](https://saucelabs.com/sign-up)).
 - An Android or iOS mobile application that includes push notification functionality.
 - **iOS Only**: Instrumentation disabled.
-- **iOS Only**: You must use private devices due to signing requirements.
+- **iOS Only**: There are two ways you can use to disable the instrumentation:
+1) Build your app using an Enterprise signed certificate. This allows the use of Public or Private devices. For guidance on this process, please refer to the following documentation: [Trusting Enterprise Certificates](https://docs.saucelabs.com/mobile-apps/live-testing/live-mobile-app-testing/#trusting-enterprise-certificates).
+2) Build your app using developer certificates and add the Device UDID to the iOS Development Profile. This option requires the use of private devices. For further instructions, please visit: [Adding UDIDs](https://docs.saucelabs.com/testfairy/sdk/ios/adding-udids/).
 
 ## Disabling Instrumentation for iOS Apps
 
